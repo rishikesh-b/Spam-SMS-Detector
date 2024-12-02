@@ -1,12 +1,14 @@
+
 import streamlit as st
 import string
-from nltk.corpus import stopwords
 import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from joblib import load
 import sqlite3
-nltk.download('stopwords')
-nltk.download('punkt')
+
 ps = PorterStemmer()
 
 def transform_text(text):
