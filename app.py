@@ -5,7 +5,8 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 from joblib import load
 import sqlite3
-nltk.download('punkt_tab')
+nltk.download('stopwords')
+nltk.download('punkt')
 ps = PorterStemmer()
 
 def transform_text(text):
